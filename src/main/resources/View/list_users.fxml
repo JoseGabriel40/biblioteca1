@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="783.0" prefWidth="952.0" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.controle.ListUserController">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+
+    <TextField fx:id="searchField" promptText="Buscar usuário por nome ou turma..." />
+
+    <TableView fx:id="userTable" prefHeight="200">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="50" text="ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="150" text="Nome" />
+            <TableColumn fx:id="courseColumn" prefWidth="150" text="Curso" />
+            <TableColumn fx:id="classColumn" prefWidth="100" text="Turma" />
+        </columns>
+    </TableView>
+
+    <!-- Campos de edição -->
+    <GridPane hgap="10" vgap="10">
+        <Label text="Nome:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="nameField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+        <Label text="Curso:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="courseField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <Label text="Turma:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextField fx:id="classField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <!-- Botões de ação -->
+        <HBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button onAction="#handleSave" text="Salvar" />
+            <Button onAction="#handleLoadToEdit" text="Editar" />
+            <Button onAction="#handleDelete" text="Excluir" />
+        </HBox>
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+</VBox>

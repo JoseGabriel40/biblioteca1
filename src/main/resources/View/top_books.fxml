@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="916.0" prefWidth="1222.0" spacing="10" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.controle.TopBookController">
+
+    <BarChart fx:id="barChart" legendSide="TOP" prefHeight="823.0" prefWidth="1033.0" title="Livros Mais Emprestados">
+        <xAxis>
+            <CategoryAxis label="Título" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Quantidade de Empréstimos" />
+        </yAxis>
+    </BarChart>
+
+</VBox>

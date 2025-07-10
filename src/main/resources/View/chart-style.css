@@ -1,0 +1,51 @@
+.bar0 { -fx-bar-fill: #FF6F61; } /* Coral */
+.bar1 { -fx-bar-fill: #6A5ACD; } /* Slate Blue */
+.bar2 { -fx-bar-fill: #3CB371; } /* Medium Sea Green */
+.bar3 { -fx-bar-fill: #FFA500; } /* Orange */
+.bar4 { -fx-bar-fill: #00CED1; } /* Dark Turquoise */
+.bar5 { -fx-bar-fill: #DB7093; } /* Pale Violet Red */
+.bar6 { -fx-bar-fill: #FFD700; } /* Gold */
+.bar7 { -fx-bar-fill: #40E0D0; } /* Turquoise */
+.bar8 { -fx-bar-fill: #FF69B4; } /* Hot Pink */
+.bar9 { -fx-bar-fill: #ADFF2F; } /* Green Yellow */
+.bar10 { -fx-bar-fill: #BA55D3; } /* Medium Orchid */
+.bar11 { -fx-bar-fill: #FF8C00; } /* Dark Orange */
+.bar12 { -fx-bar-fill: #8FBC8F; } /* Dark Sea Green */
+.bar13 { -fx-bar-fill: #6495ED; } /* Cornflower Blue */
+.bar14 { -fx-bar-fill: #DC143C; } /* Crimson */
+.bar0  { -fx-bar-fill: #FF6F61; }  /* Coral */
+.bar1  { -fx-bar-fill: #6A5ACD; }  /* Slate Blue */
+.bar2  { -fx-bar-fill: #3CB371; }  /* Medium Sea Green */
+.bar3  { -fx-bar-fill: #FFA500; }  /* Orange */
+.bar4  { -fx-bar-fill: #00CED1; }  /* Dark Turquoise */
+.bar5  { -fx-bar-fill: #DB7093; }  /* Pale Violet Red */
+.bar6  { -fx-bar-fill: #FFD700; }  /* Gold */
+.bar7  { -fx-bar-fill: #40E0D0; }  /* Turquoise */
+.bar8  { -fx-bar-fill: #FF69B4; }  /* Hot Pink */
+.bar9  { -fx-bar-fill: #ADFF2F; }  /* Green Yellow */
+.bar10 { -fx-bar-fill: #BA55D3; }  /* Medium Orchid */
+.bar11 { -fx-bar-fill: #FF8C00; }  /* Dark Orange */
+.bar12 { -fx-bar-fill: #8FBC8F; }  /* Dark Sea Green */
+.bar13 { -fx-bar-fill: #6495ED; }  /* Cornflower Blue */
+.bar14 { -fx-bar-fill: #DC143C; }  /* Crimson */
+.bar15 { -fx-bar-fill: #FFB6C1; }  /* Light Pink */
+.bar16 { -fx-bar-fill: #20B2AA; }  /* Light Sea Green */
+.bar17 { -fx-bar-fill: #9370DB; }  /* Medium Purple */
+.bar18 { -fx-bar-fill: #4682B4; }  /* Steel Blue */
+.bar19 { -fx-bar-fill: #FA8072; }  /* Salmon */
+.bar20 { -fx-bar-fill: #00FA9A; }  /* Medium Spring Green */
+.bar21 { -fx-bar-fill: #B0C4DE; }  /* Light Steel Blue */
+.bar22 { -fx-bar-fill: #FF4500; }  /* Orange Red */
+.bar23 { -fx-bar-fill: #8A2BE2; }  /* Blue Violet */
+.bar24 { -fx-bar-fill: #00BFFF; }  /* Deep Sky Blue */
+.bar25 { -fx-bar-fill: #A52A2A; }  /* Brown */
+.bar26 { -fx-bar-fill: #5F9EA0; }  /* Cadet Blue */
+.bar27 { -fx-bar-fill: #9932CC; }  /* Dark Orchid */
+.bar28 { -fx-bar-fill: #228B22; }  /* Forest Green */
+.bar29 { -fx-bar-fill: #F08080; }  /* Light Coral */
+
+.bar-label {
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}

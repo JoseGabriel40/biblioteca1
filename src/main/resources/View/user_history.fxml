@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="870.0" prefWidth="1201.0" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.controle.UserHistoryController">
+
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+
+    <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Histórico de Empréstimos do Usuário" />
+
+    <TableView fx:id="historyTable" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="50" text="ID" />
+            <TableColumn fx:id="bookColumn" prefWidth="200" text="Livro" />
+            <TableColumn fx:id="loanDateColumn" prefWidth="150" text="Empréstimo" />
+            <TableColumn fx:id="returnDateColumn" prefWidth="150" text="Devolução" />
+            <TableColumn fx:id="statusColumn" prefWidth="100" text="Status" />
+        </columns>
+    </TableView>
+
+    <HBox spacing="10">
+        <Button onAction="#handleClose" text="Fechar" />
+    </HBox>
+    <HBox spacing="10">
+        <Label text="De:" />
+        <DatePicker fx:id="startDatePicker" />
+        <Label text="Até:" />
+        <DatePicker fx:id="endDatePicker" />
+        <Button onAction="#handleFilterByDate" text="Filtrar" />
+    </HBox>
+
+</VBox>

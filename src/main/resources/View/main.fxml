@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="778.0" prefWidth="1224.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.controle.MainController">
+
+    <!-- Menu superior -->
+    <top>
+        <MenuBar>
+            <Menu text="Cadastrar">
+                <MenuItem onAction="#openAddBook" text="Livro" />
+                <MenuItem onAction="#openAddUser" text="Usuário" />
+            </Menu>
+
+            <Menu text="Empréstimos">
+                <MenuItem onAction="#openLoanManagement" text="Gerenciar Empréstimos" />
+                <MenuItem onAction="#openReturnedLoans" text="Empréstimos Devolvidos" />
+            </Menu>
+
+            <Menu text="Relatórios">
+                <MenuItem onAction="#openTopBooks" text="Livros Mais Emprestados" />
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <!-- Conteúdo central estilizado -->
+    <center>
+        <VBox alignment="CENTER" spacing="5">
+            <ImageView fitHeight="191.0" fitWidth="287.0">
+                <image>
+                    <Image url="@logo.png" />
+                </image>
+            </ImageView>
+
+            <Label styleClass="titulo" text="Sistema de Biblioteca" />
+            <Label styleClass="subtitulo" text="Bem-vindo(a)! Selecione uma ação no menu acima." />
+        </VBox>
+    </center>
+
+</BorderPane>

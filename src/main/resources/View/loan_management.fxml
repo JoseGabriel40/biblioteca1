@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="831.0" prefWidth="1048.0" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.controle.LoanController">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+
+    <GridPane alignment="TOP_CENTER" cache="true" depthTest="DISABLE" hgap="10" prefHeight="225.0" prefWidth="1015.0" vgap="10">
+        <Label text="Usuário:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="userSearchField" promptText="Digite nome ou ID do usuário" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Button onAction="#searchUser" text="Buscar" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+
+        <Label text="Livro:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="bookSearchField" promptText="Digite título ou ID do livro" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button onAction="#searchBook" text="Buscar" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+
+        <Label text="Data de Empréstimo:" GridPane.rowIndex="2" />
+        <DatePicker fx:id="loanDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <Label text="Data de Devolução:" GridPane.rowIndex="3" />
+        <DatePicker fx:id="returnDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+        <Button onAction="#handleLoan" prefHeight="26.0" prefWidth="187.0" text="Registrar Empréstimo" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <Button onAction="#handleReturn" text="Registrar Devolução" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+
+        <!-- ✅ Botão novo para abrir histórico do usuário -->
+        <Button onAction="#openUserHistory" prefHeight="26.0" prefWidth="165.0" text="Ver Histórico do Usuário" GridPane.rowIndex="5" />
+
+        <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+        </rowConstraints>
+    </GridPane>
+
+    <TableView fx:id="loanTable">
+        <columns>
+            <TableColumn fx:id="loanIdColumn" text="ID" />
+            <TableColumn fx:id="userColumn" text="Usuário" />
+            <TableColumn fx:id="bookColumn" text="Livro" />
+            <TableColumn fx:id="loanDateColumn" text="Empréstimo" />
+            <TableColumn fx:id="returnDateColumn" text="Devolução" />
+        </columns>
+    </TableView>
+</VBox>
